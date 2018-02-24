@@ -13,12 +13,16 @@ mysqlimport --ignore-lines=1 \
             --fields-terminated-by=, \
             --local -u root \
             -p Database \
-             TableName.csv
+             doab.csv
 ```
 
-I found it at http://chriseiffel.com/everything-linux/how-to-import-a-large-csv-file-to-mysql/
 
 To make the delimiter a tab, use --fields-terminated-by='\t'
 
-# https://stackoverflow.com/questions/3635166/how-to-import-csv-file-to-mysql-table
 
+<!--
+
+"I found it at http://chriseiffel.com/everything-linux/how-to-import-a-large-csv-file-to-mysql/"
+
+https://stackoverflow.com/questions/3635166/how-to-import-csv-file-to-mysql-table
+-->
