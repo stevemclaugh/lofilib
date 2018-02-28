@@ -11,6 +11,9 @@ $dbname = "srm3536";
 // Create connectionConnection failed: " . $conn->connect_error);
 } 
 
+// $sql = "INSERT INTO MyGuests (firstname, lastname, email, message)
+// VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[email]', '$_POST[message]')";
+
 $sql = "INSERT INTO MyGuests (firstname, lastname, email, message)
 VALUES ('$_POST[first_name]', '$_POST[last_name]', '$_POST[email]', '$_POST[message]')";
 
