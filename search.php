@@ -50,7 +50,6 @@ if ($result->num_rows > 0) {
             echo '<br /> Authors: ' . $row['authors'];
         }
         echo '<br /> Filename: ' . $row['filename'];
-        echo "<br />";
     }
 } else {
     echo "0 results";
