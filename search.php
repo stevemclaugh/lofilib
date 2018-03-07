@@ -16,7 +16,7 @@ $password = "inf385m";
 $dbname = "lofilib";
 
 
-$sql = "select * from books where title like" . "'%$_GET[title]%'";
+$sql = "select * from books where title like " . "'%$_GET[title]%'";
 
 echo $sql;
 
