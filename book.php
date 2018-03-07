@@ -15,11 +15,11 @@ $username = "srm3536";
 $password = "inf385m";
 $dbname = "lofilib";
 
-$sql = "select * from books where book_id='$_GET[id]'";
 
-echo $sql;
+$sql = "select * from books where book_id=" . "'$_GET[id]'";
 
-/*
+// echo $sql;
+
 // Create connection
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -54,7 +54,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 
 
-*/
+
 
 ?>
 
