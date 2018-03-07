@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 <meta charset="UTF-8">
 <title>lofilib | book</title>
@@ -14,12 +15,12 @@ $username = "srm3536";
 $password = "inf385m";
 $dbname = "lofilib";
 
-$echo '$_GET[id]';
-
 $sql = "select * from books where book_id='$_GET[id]'";
 
-//echo $sql;
+echo $sql;
 
+
+/*
 // Create connection
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -54,7 +55,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 
-
+*/
 
 </body>
            
