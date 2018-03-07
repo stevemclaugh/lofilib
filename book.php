@@ -19,7 +19,6 @@ $sql = "select * from books where book_id='$_GET[id]'";
 
 echo $sql;
 
-
 /*
 // Create connection
 
