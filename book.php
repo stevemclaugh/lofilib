@@ -1,5 +1,11 @@
+
+<!DOCTYPE html>
 <html>
-<body>
+<head>
+<meta charset="UTF-8">
+<title>lofilib | book</title>
+</head>
+
 <h1>Book</h1>
 
 <?php
@@ -8,9 +14,11 @@ $username = "srm3536";
 $password = "inf385m";
 $dbname = "lofilib";
 
-$sql = "select * from books where book_id='$_GET[book_id]'";
+$echo '$_GET[id]';
 
-echo $sql;
+$sql = "select * from books where book_id='$_GET[id]'";
+
+//echo $sql;
 
 // Create connection
 
@@ -26,14 +34,17 @@ $result = $conn->query($sql);
 //echo $result->num_rows;
 
 
-echo "<br / ><br />";
+echo "<br / >";
 
 
 if ($result->num_rows > 0) {
-//     output data of each row
+    // Output data in each row
+    // Conditional below works like a cursor: It evaluates to true and updates the $row variable if there's another row available.
     while($row = $result->fetch_assoc()) {
         echo '<br /> Title: ' . $row['title'];
-        echo '<br /> Authors: ' . $row['authors'];
+        if ($row['authors'] != '') {
+            echo '<br /> Authors: ' . $row['authors'];
+        }
         echo '<br /> Filename: ' . $row['filename'];
     }
 } else {
@@ -42,7 +53,6 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-
 
 
 
