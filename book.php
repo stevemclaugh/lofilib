@@ -1,14 +1,40 @@
 <html>
 <body>
-<h1>A small example page to insert some data in to the MySQL database using PHP</h1>
+<h1>Book</h1>
 
-<form action="insert.php" method="post">
-Firstname: <input type="text" name="first_name" /><br><br>
-Lastname: <input type="text" name="last_name" /><br><br> 
-Email: <input type="text" name="email" /><br><br>
-Message: <input type="text" name="message" /><br><br>
-<input type="submit" />
-</form>
+<?php
+$servername = "localhost";
+$username = "srm3536";
+$password = "inf385m";
+$dbname = "srm3536";
+
+// Create connectionConnection failed: " . $conn->connect_error);
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "select * from books where book_id='$_GET[book_id]'";
+
+$result = $conn->query($sql)
+
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?>
+
+
+
 
 </body>
 </html>
