@@ -16,13 +16,9 @@ $password = "inf385m";
 $dbname = "lofilib";
 
 
-$sql = "select * from books where "
+$sql = "select * from books where title like" . "'%$_GET[title]%'";
 
-if ("$_GET[title]" != '') {
-
-$sql = $sql + "title like" . "'%$_GET[title]%'";
-
-}
+echo $sql;
 
 // Create connection
 
