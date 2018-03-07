@@ -11,9 +11,9 @@ Use mysqlimport to load a table into the database:
 ```
 mysqlimport --ignore-lines=1 \
             --fields-terminated-by=, \
-            --local -u root \
-            -p Database \
-             doab.csv
+            --local -u USERNAME \
+            -p \
+             books.csv
 ```
 
 
