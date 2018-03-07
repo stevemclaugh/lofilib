@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 
 $sql = "select * from books where book_id='$_GET[book_id]'";
 
-$result = $conn->query($sql)
+$result = $conn->query($sql);
 
 
 if ($result->num_rows > 0) {
