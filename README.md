@@ -39,6 +39,7 @@ mysqlimport --ignore-lines=1 \
 ```
 
 
+
 To make the delimiter a tab, use --fields-terminated-by='\t'
 
 
