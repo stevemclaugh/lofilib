@@ -3,7 +3,6 @@
 Clean DOAB table.
 
 
-
 Create DB and load CSV.
 
 Create books table:
