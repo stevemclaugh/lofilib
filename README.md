@@ -41,10 +41,23 @@ mysqlimport --ignore-lines=1 \
 
 To make the delimiter a tab, use --fields-terminated-by='\t'
 
-
 <!--
-
-"I found it at http://chriseiffel.com/everything-linux/how-to-import-a-large-csv-file-to-mysql/"
-
+From http://chriseiffel.com/everything-linux/how-to-import-a-large-csv-file-to-mysql/
 https://stackoverflow.com/questions/3635166/how-to-import-csv-file-to-mysql-table
 -->
+
+
+## Metadata Fields
+
+```
+book_id,author_id,filename,title,authors,isbn,pages,publisher,language,description,keywords,pub_type,cover_image
+```
+
+GitHub page: [https://github.com/stevemclaugh/lofilib](https://github.com/stevemclaugh/lofilib)
+
+
+How to access the page for a particular book:
+- [https://aura.ischool.utexas.edu/~srm3536/lofilib-master/book.php?id=a39cda0c7e7fce1128a02f3ce914b6da](https://aura.ischool.utexas.edu/~srm3536/lofilib-master/book.php?id=a39cda0c7e7fce1128a02f3ce914b6da)
+
+Here’s how to search by title:
+- [https://aura.ischool.utexas.edu/~srm3536/lofilib-master/search.php?title=Death](https://aura.ischool.utexas.edu/~srm3536/lofilib-master/search.php?title=Death)

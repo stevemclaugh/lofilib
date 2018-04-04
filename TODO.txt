@@ -1,0 +1,80 @@
+
+## Tables
+
+Books
+['book_id', 'author_id', 'filename', 'title', 'authors', 'isbn', 'pages', 'publisher', 'language', 'description', 'keywords', 'pub_type', 'cover_image']
+
+Users
+user_id, username, date_joined
+
+Authors
+author_id, name
+
+Ratings
+book_id, user_id, rating
+
+Faves
+user_id, book_id
+
+Full_text
+book_id
+
+
+## Pages to create
+
+book.php
+Example GET request: book.php?id=c017397521c7d218a6aa235c6d1f3baf
+Uses `book_id` key in URL
+Displays metadata for a book (perhaps with a cover image)
+Allows logged-in users to favorite a book
+Allows logged-in users to rate a book
+Displays number of favorites
+Displays average rating
+Enter `book_id` to connect to PDF file with no metadata(?)
+
+search.php
+Example GET request: search.php?q='Mark+Twain'
+Plain old search of all metadata fields combined, minus full text of each item
+Remember to search filenames as well, replacing underscores and hyphens with spaces.
+
+advanced_search.php
+Example GET request: advanced_search.php?author='Mark+Twain'&title='Huckleberry+Finn'
+Allows searching by individual metadata fields, or full text
+
+full_text_search.php
+Using POST
+Takes a literal string and searches for an exact match in the full-text DB, then shows snippets of surrounding text for each match
+Include case sensitive / not option
+
+login.php
+Using POST
+Enter yr username and password
+
+new_book.php
+Using POST
+Lets logged-in users upload and enter metadata for a new book
+
+edit_book.php
+Example GET request: edit_book.php?id=85b969d3fa140500e2a5f762a7455ea2
+Lets logged-in users edit the metadata for a given book
+
+new_user.php
+Using POST
+Create a new username and password
+
+settings.php
+Using POST
+Change your password
+Change default search settings
+
+
+
+
+
+
+## GitHub repo (not much posted yet)
+
+https://github.com/stevemclaugh/lofilib
+
+
+
