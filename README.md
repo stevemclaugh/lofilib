@@ -1,9 +1,8 @@
 # lofilib
 
-Clean DOAB table.
+Setup steps:
 
-
-Create DB and load CSV.
+- Create metadata DB and load CSV.
 
 Create books table:
 
@@ -37,9 +36,9 @@ mysqlimport --ignore-lines=1 \
             books.csv
 ```
 
+`books.csv` contains basic metadata for each book in the collection.
 
-
-To make the delimiter a tab, use --fields-terminated-by='\t'
+>> To make the delimiter a tab instead, use the option `--fields-terminated-by='\t'`
 
 <!--
 From http://chriseiffel.com/everything-linux/how-to-import-a-large-csv-file-to-mysql/
