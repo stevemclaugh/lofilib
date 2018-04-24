@@ -42,8 +42,7 @@ VALUES
 CREATE TABLE IF NOT EXISTS ratings (
   `book_id` CHAR(32) NOT NULL,
   `user_id` CHAR(32) NOT NULL,
-  `rating` SMALLINT NOT NULL,
-  PRIMARY KEY (`book_id`));
+  `rating` SMALLINT NOT NULL);
 
 
 CREATE TABLE IF NOT EXISTS ratings (
