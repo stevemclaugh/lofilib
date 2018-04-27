@@ -45,17 +45,6 @@ CREATE TABLE IF NOT EXISTS ratings (
   `rating` SMALLINT NOT NULL);
 
 
-CREATE TABLE IF NOT EXISTS ratings (
-  `book_id` CHAR(32) NOT NULL,
-  `user_id` CHAR(32) NOT NULL,
-  `rating` SMALLINT NOT NULL,
-  PRIMARY KEY (`book_id`));
-
-
-CREATE TABLE IF NOT EXISTS faves (
-  `book_id` CHAR(32) NOT NULL,
-  `user_id` CHAR(32) NOT NULL,
-  PRIMARY KEY (`book_id`));
 
 CREATE TABLE IF NOT EXISTS full_text (
   `book_id` CHAR(32) NOT NULL,
@@ -74,6 +63,7 @@ Use mysqlimport to load a table into the database:
 ```
 mysqlimport --ignore-lines=1 \
             --fields-terminated-by=, \
+            --enclosed-by=", \
             --local -u srm3536 \
             -p \
             lofilib \
