@@ -63,7 +63,7 @@ Use mysqlimport to load a table into the database:
 ```
 mysqlimport --ignore-lines=1 \
             --fields-terminated-by=, \
-            --enclosed-by=", \
+            --fields-optionally-enclosed-by="\"" \
             --local -u srm3536 \
             -p \
             lofilib \
