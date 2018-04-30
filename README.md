@@ -48,7 +48,7 @@ CREATE TABLE IF NOT EXISTS ratings (
 
 CREATE TABLE IF NOT EXISTS full_text (
   `book_id` CHAR(32) NOT NULL,
-  `text` LONGTEXT,
+  `text` MEDIUMTEXT,
   PRIMARY KEY (`book_id`));
 
 ```
@@ -70,7 +70,20 @@ mysqlimport --ignore-lines=1 \
             books.csv
 ```
 
+
 `books.csv` contains basic metadata for each book in the collection.
+
+
+```
+mysqlimport --ignore-lines=1 \
+            --fields-terminated-by=, \
+            --fields-optionally-enclosed-by="\"" \
+            --local -u srm3536 \
+            -p \
+            lofilib \
+            full_text.csv
+```
+
 
 >> To make the delimiter a tab instead, use the option `--fields-terminated-by='\t'`
 
