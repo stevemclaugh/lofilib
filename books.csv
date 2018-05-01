@@ -1,10 +1,28 @@
-book_id,author_id,filename,title,authors,isbn,pages,publisher,language,description,keywords,pub_type,cover_image
-59b9af6b1c60661180db75294ac794df,0,Soulignac_Les Scories de forge du Pays dogon_THESE.pdf," Les Scories de forge du Pays dogon (Mali) Entre ethnoarchéologie, archéologie expérimentale et archéométrie","Soulignac, Raphaëlle",9783952454299,209,LIBRUM Publishers & Editors LLC,French,,"Archaeology, metallurgy, Mali, thesis, archaeometallurgy, metal",book,forge.jpg
-a39cda0c7e7fce1128a02f3ce914b6da,0,UofCPress_CanadianTelevision_2006.pdf,Canadian Television Today,Bart Beaty; Rebecca Sullivan,9781552386743,184,University of Calgary Press,English,,,book,canadian_tv.png
-b74e5411743c0b09f23d3da7bec70eca,0,UofCPress_ChangingArctic_2013.pdf,The Fast-Changing Arctic,Barry Scott Zellen,9781552386477,410,University of Calgary Press,English,,Arctic,book,arctic.jpg
-c666ed788fdff50e60f07a5f9c0223ba,0,UofCPress_ClericalIdeology_2003.pdf,"Clerical Ideology in a Revolutionary Age: The Guadalajara Church and the Idea of the Mexican Nation, 1788-1853",Brian F. Connaughton,9781552386767,435,University of Calgary Press,English,,,book,download_1.jpg
-d92febf57fc761ef1503a57a4c27f55f,0,UofCPress_CleverBody_2006.pdf,The Clever Body,Gabor Csepregi ,9781552385944,208,University of Calgary Press,English,,,book,6267641.jpg
-5b2bec4b474dbe6f36d6ae9e438f691c,0,UofCPress_CommonHunger_2006.pdf,A Common Hunger: Land Rights in Canada and South Africa,Joan G. Fairweather,9781552385739,284,University of Calgary Press,English,,,book,common-hunger-2x3-rgb.jpg
-17d9f6b527da3a83a637a974b9936824,0,UofCPress_CoverUncover_2011.pdf,Cover and Uncover: Eric Cameron,,9781552385906,140,University of Calgary Press,English,,,book,download.jpg
-631d4aaba18e6607f272d4ac17c61f15,0,UofCPress_DeathDrive_2007.pdf,Death Drive Through Gaia Paris,Charles Noble,9781552386644,80,University of Calgary Press,English,,,book,41Sxnl4Ac.jpg
-ec03d7bc6de2c4daa4ad82caa7cc5a8d,0,UofCPress_GreeningtheMaple_2013.pdf,Greening the Maple: Canadian Ecocriticism in Context,Ella Soper; Nicholas Bradley,9781552385487,624,University of Calgary Press,English,,Ecocriticism;  Literary Criticism,book,1964-NL-Yearbook-6.jpg
+book_id,year,filename,title,authors,isbn,pages,publisher,language,description,keywords,pub_type,cover_image
+59b9af6b1c60661180db75294ac794df,,Soulignac_Les Scories de forge du Pays dogon_THESE.pdf," Les Scories de forge du Pays dogon (Mali) Entre ethnoarchéologie, archéologie expérimentale et archéométrie","Soulignac, Raphaëlle",9783952454299,209,LIBRUM Publishers & Editors LLC,French,,"Archaeology, metallurgy, Mali, thesis, archaeometallurgy, metal",book,forge.jpg
+a39cda0c7e7fce1128a02f3ce914b6da,,UofCPress_CanadianTelevision_2006.pdf,Canadian Television Today,Bart Beaty; Rebecca Sullivan,9781552386743,184,University of Calgary Press,English,,,book,canadian_tv.png
+b74e5411743c0b09f23d3da7bec70eca,,UofCPress_ChangingArctic_2013.pdf,The Fast-Changing Arctic,Barry Scott Zellen,9781552386477,410,University of Calgary Press,English,,Arctic,book,arctic.jpg
+c666ed788fdff50e60f07a5f9c0223ba,,UofCPress_ClericalIdeology_2003.pdf,"Clerical Ideology in a Revolutionary Age: The Guadalajara Church and the Idea of the Mexican Nation, 1788-1853",Brian F. Connaughton,9781552386767,435,University of Calgary Press,English,,,book,download_1.jpg
+d92febf57fc761ef1503a57a4c27f55f,,UofCPress_CleverBody_2006.pdf,The Clever Body,Gabor Csepregi ,9781552385944,208,University of Calgary Press,English,,,book,6267641.jpg
+5b2bec4b474dbe6f36d6ae9e438f691c,,UofCPress_CommonHunger_2006.pdf,A Common Hunger: Land Rights in Canada and South Africa,Joan G. Fairweather,9781552385739,284,University of Calgary Press,English,,,book,common-hunger-2x3-rgb.jpg
+17d9f6b527da3a83a637a974b9936824,,UofCPress_CoverUncover_2011.pdf,Cover and Uncover: Eric Cameron,Ann Davis (ed.); Peggy Gale; Diana Nemiroff; Thierry de Duve,9781552385906,140,University of Calgary Press,English,,,book,download.jpg
+631d4aaba18e6607f272d4ac17c61f15,,UofCPress_DeathDrive_2007.pdf,Death Drive Through Gaia Paris,Charles Noble,9781552386644,80,University of Calgary Press,English,,,book,41Sxnl4Ac.jpg
+ec03d7bc6de2c4daa4ad82caa7cc5a8d,,UofCPress_GreeningtheMaple_2013.pdf,Greening the Maple: Canadian Ecocriticism in Context,Ella Soper; Nicholas Bradley,9781552385487,624,University of Calgary Press,English,,Ecocriticism;  Literary Criticism,book,1964-NL-Yearbook-6.jpg
+12976d2d897f0e300c27b904ee97315f ,,602282.pdf,"Instruments for New Music: Sound, Technology, and Modernism",Thomas Patteson,,,,English,,,book,Instruments_Music.jpg 
+b688000630b17e697a29f37aa387a0cb ,,10.1007_978-3-319-31616-1.pdf,History of Mathematics Teaching and Learning,Alexander Karp; Fulvia Furinghetti,,,,English,,,book,History_of_mathematics.jpg 
+eb354ed2da1c8bd02772366e0836ee69 ,,9783957960412-Sprenger-The_Politics_of_Micro-Descisions.pdf,"The Politics of Micro-Decisions: Edward Snowden, Net Neutrality, and the Architectures of the Internet",Florian Sprenger,,,,English,,,book,9783957960412-Sprenger-The_Politics_of_Micro-Descisions_COVER.jpg 
+0e54adcecd46685fe8c2c1bb000cf962 ,,Coleman-Coding-Freedom.pdf,Coding Freedom: The Ethics and Aesthetics of Hacking ,E. Gabriella Coleman,,,,English,,,book,coding_freedom.jpg 
+ce1247793db59aa1172d1d2dc47bf9b4 ,,Eve_2014_Open-Access-and-the-Humanities.pdf,Open Access and the Humanities,Martin Paul Eve,,,,English,,,book,oa_humanities.jpg 
+c7463089c3a10a455b2dc909424f3502 ,,341341.pdf,Half the battle: Civilian morale in Britain during the Second World War,Robert Mackay,9780719058936,,,English,,,book,half_the_battle.jpg 
+8f8236fa63049ee400a7a32444256e29 ,,Boyle 2008 - The Public Domain.pdf ,The Public Domain: Enclosing the Commons of the Mind,James Boyle,,,,English,,,book,public_domain.jpg 
+cb4e9c8abd1cf1dbda164ae5c6c33723 ,,Kelty 2008 - Two Bits_ The Cultural Significance of Free Software.pdf ,Two Bits: The Cultural Significance of Free Software,Christopher Kelty,,,,English,,,book,two_bits.jpg 
+37afc655c76fcf5a42724e7fb52fc540 ,,Zittrain_Future of the Internet.pdf ,The Future of the Internet and How to Stop It,Jonathan L. Zittrain,,,,English,,,book,future_of_internet.jpg 
+aefdfb0829480a54c410614afb4376f7 ,,Zurkow_More_More_Harmonized_Code_EBook.pdf ,More&More (a Guide to the Harmonized System) ,Marina Zurkow ,,,,English,,,book,more_and_more.png 
+8a74b7bf399c895336e6466a1fb977b0,,A_Hacker_Manifesto.pdf,A Hacker Manifesto,Mackenzie Wark,,,,English,,,book,200px-Ahackermanifestowark.jpg 
+2b8db781c2c78885a5bd5527ff0b2e80,,Bollier 2008 - Viral Spiral- How the Commoners Built a Digital Republic of Their Own.pdf,Viral Spiral: How the Commoners Built a Digital Republic of Their Own,David Bollier,,,,English,,,book,viral.jpg 
+1a59b3e3aca44de69067fa297e7dca7e,,Boyle & Jenkins 2014 - IPCasebook2014.pdf,Intellectual Property: Law and the Information Society,James Boyle; Jennifer Jenkins (eds.),,,,English,,,book,ip.jpg 
+f4285714f9b9c7158055f5ebf1d88504,,In-Praise-of-Copying-by-Marcus-Boon-HUP-free-full-text.pdf,In Praise of Copying,Marcus Boon,,,,English,,,book,boon.jpg 
+d26df717a58b72c793859eb1f58aacf3,,Leah Lievrouw 2011 - Alternative and activist new media.pdf,Alternative and Activist New Media,Leah A. Lievrouw,,,,English,,,book,liev.jpg 
+f62deb00a8f1dab7f09f810ccea49f99,,MF31-769 The Copy Book.pdf,The Copy Book: Copyright-Free Illustrations for Development,Association of Illustrators,,,,English,,,book,copy_book.jpg 
+0bb603edfbd7562c46b77d2555c6edcf,,Shove 1937 - Cheap book production in the United States.pdf,Cheap Book Production in the United States,Raymond H. Shove,,,,English,,,book,cheap.png 
+950207457992d3111b70f85c42409cfb,,Suber 2012 - Open Access.pdf ,Open Access,Peter Suber,,,,English,,,book,suber.png 

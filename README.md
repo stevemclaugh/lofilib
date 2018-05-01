@@ -22,51 +22,7 @@ CREATE TABLE IF NOT EXISTS books (
   `pub_type` VARCHAR(255) NULL DEFAULT NULL,
   `cover_image` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`book_id`));
-
-
-
-CREATE TABLE IF NOT EXISTS users (
-  `user_id` CHAR(32) NOT NULL,
-  `username` CHAR(32) NULL DEFAULT NULL,
-  `date_joined` CHAR(32) NULL DEFAULT NULL,
-  `password` VARCHAR(255) NULL DEFAULT NULL,
-  PRIMARY KEY (`user_id`));
-
-
-INSERT INTO users
-(user_id, username, date_joined, passwrod)
-VALUES
-('9', 'steve', '1524004835', 'password');
-
-
-CREATE TABLE IF NOT EXISTS ratings (
-  `book_id` CHAR(32) NOT NULL,
-  `user_id` CHAR(32) NOT NULL,
-  `rating` SMALLINT NOT NULL);
-
-
-CREATE TABLE IF NOT EXISTS ratings (
-  `book_id` CHAR(32) NOT NULL,
-  `user_id` CHAR(32) NOT NULL,
-  `rating` SMALLINT NOT NULL,
-  PRIMARY KEY (`book_id`));
-
-
-CREATE TABLE IF NOT EXISTS faves (
-  `book_id` CHAR(32) NOT NULL,
-  `user_id` CHAR(32) NOT NULL,
-  PRIMARY KEY (`book_id`));
-
-CREATE TABLE IF NOT EXISTS full_text (
-  `book_id` CHAR(32) NOT NULL,
-  `text` LONGTEXT,
-  PRIMARY KEY (`book_id`));
-
 ```
-
-
-
-
 
 
 Use mysqlimport to load a table into the database:

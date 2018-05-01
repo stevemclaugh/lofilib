@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+
+<div class="container">
+
+<br />
+  <div style="position: absolute; right: 70px; top 50px;">
+
+<br /><img src="lofilib.png" width='150' height="150"><br><br>
+
+<a href="index.php">Find a book</a>
+
+<?php
+if($_SESSION["logged_in"] == TRUE){
+    echo '<br /><a href="logout.php">Log out</a><br>';
+    echo '<a href="saved.php">View saved books</a><br>';
+}else{ 
+    echo '<br /><a href="login.php">Log in</a><br>';
+    echo '<a href="create.php">Create an account</a><br>';
+}
+
+?>
+
+<a href="viewratings.php">View ratings</a><br>
+
+
+  </div>
+
+   
+<br>
+
+<div style = 'width: 600px;'>

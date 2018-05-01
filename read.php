@@ -1,5 +1,9 @@
 <?php
-$servern
+session_start();
+include("head.html");
+?>
+
+<?php
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
