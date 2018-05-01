@@ -9,7 +9,7 @@ Create books table:
 ```
 CREATE TABLE IF NOT EXISTS books (
   `book_id` CHAR(32) NOT NULL,
-  `author_id` CHAR(32) NULL DEFAULT NULL,
+  `year` CHAR(16) NULL DEFAULT NULL,
   `filename` VARCHAR(255) NULL DEFAULT NULL,
   `title` VARCHAR(255) NULL DEFAULT NULL,
   `authors` VARCHAR(255) NULL DEFAULT NULL,
