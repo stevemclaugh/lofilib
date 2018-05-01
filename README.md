@@ -9,7 +9,7 @@ Create books table:
 ```
 CREATE TABLE IF NOT EXISTS books (
   `book_id` CHAR(32) NOT NULL,
-  `author_id` CHAR(32) NULL DEFAULT NULL,
+  `year` CHAR(16) NULL DEFAULT NULL,
   `filename` VARCHAR(255) NULL DEFAULT NULL,
   `title` VARCHAR(255) NULL DEFAULT NULL,
   `authors` VARCHAR(255) NULL DEFAULT NULL,
@@ -22,6 +22,35 @@ CREATE TABLE IF NOT EXISTS books (
   `pub_type` VARCHAR(255) NULL DEFAULT NULL,
   `cover_image` VARCHAR(255) NULL DEFAULT NULL,
   PRIMARY KEY (`book_id`));
+
+
+
+CREATE TABLE IF NOT EXISTS users (
+  `user_id` CHAR(32) NOT NULL,
+  `username` CHAR(32) NULL DEFAULT NULL,
+  `date_joined` CHAR(32) NULL DEFAULT NULL,
+  `password` VARCHAR(255) NULL DEFAULT NULL,
+  PRIMARY KEY (`user_id`));
+
+
+INSERT INTO users
+(user_id, username, date_joined, passwrod)
+VALUES
+('9', 'steve', '1524004835', 'password');
+
+
+CREATE TABLE IF NOT EXISTS ratings (
+  `book_id` CHAR(32) NOT NULL,
+  `user_id` CHAR(32) NOT NULL,
+  `rating` SMALLINT NOT NULL);
+
+
+
+CREATE TABLE IF NOT EXISTS full_text (
+  `book_id` CHAR(32) NOT NULL,
+  `text` MEDIUMTEXT,
+  PRIMARY KEY (`book_id`));
+
 ```
 
 
@@ -30,13 +59,27 @@ Use mysqlimport to load a table into the database:
 ```
 mysqlimport --ignore-lines=1 \
             --fields-terminated-by=, \
+            --fields-optionally-enclosed-by="\"" \
             --local -u srm3536 \
             -p \
             lofilib \
             books.csv
 ```
 
+
 `books.csv` contains basic metadata for each book in the collection.
+
+
+```
+mysqlimport --ignore-lines=1 \
+            --fields-terminated-by=, \
+            --fields-optionally-enclosed-by="\"" \
+            --local -u srm3536 \
+            -p \
+            lofilib \
+            full_text.csv
+```
+
 
 >> To make the delimiter a tab instead, use the option `--fields-terminated-by='\t'`
 
